@@ -13,30 +13,51 @@ from tensorflow.python.framework.errors_impl import NotFoundError
 # os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
 # os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 
+# Đặt các biến môi trường để nhận dạng CPU
+# os.envir ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
+# os.envir ["CUDA_VISIBLE_DEVICE"] = "-1"
+
 class TrainError(Exception):
     pass
 
-
+# object
 class TrainModel(object):
+    # img_path link file ảnh
+    # char_set list kí tự có trong captcha
+    # model_save_dir nơi lưu model
+    # verify giá trị ban đầu là False
     def __init__(self, img_path, char_set, model_save_dir, verify=False):
         # 模型路径
+        # Địa chỉ lưu model
         self.model_save_dir = model_save_dir
 
         # 打乱文件顺序+校验图片格式
-        self.img_path = img_path
-        self.img_list = os.listdir(img_path)
+        # đảo lộn trật tự ảnh và kiểm tra định dạng ảnh
+        self.img_path = img_path # folder train
+        self.img_list = os.listdir(img_path) # list ảnh trong folder train
         # 校验格式
+        # Kiểm tra định dạng ảnh
         if verify:
             self.confirm_image_suffix()
         # 打乱文件顺序
+        # Đảo lộn trật tự ảnh trong list ảnh
         random.seed(time.time())
         random.shuffle(self.img_list)
 
         # 获得图片宽高和字符长度基本信息
+        # Lấy thông tin cơ bản về chiều rộng hình ảnh và độ dài kí tự
+        # args row đầu tiên của img_list
         label, captcha_array = self.gen_captcha_text_image(self.img_list[0])
 
+        # lấy shape của ảnh
         captcha_shape = captcha_array.shape
         captcha_shape_len = len(captcha_shape)
+        # nếu shape của ảnh bằng 3
+        #   lấy height, width, channel
+        # nếu shape của ảnh bằng 2
+        #   lấy height, width
+        # trường hợp khác
+        #   báo lỗi 'Có lỗi khi chuyển đổi hình ảnh thành ma trận. Vui lòng kiểm tra định dạng hình ảnh.'
         if captcha_shape_len == 3:
             image_height, image_width, channel = captcha_shape
             self.channel = channel
@@ -46,16 +67,25 @@ class TrainModel(object):
             raise TrainError("图片转换为矩阵时出错，请检查图片格式")
 
         # 初始化变量
+        # Khởi tạo biến
         # 图片尺寸
+        # Kích thước hình ảnh
         self.image_height = image_height
         self.image_width = image_width
         # 验证码长度（位数）
+        # Độ dài captcha (số chữ số)
         self.max_captcha = len(label)
         # 验证码字符类别
+        # Lớp kí tự
         self.char_set = char_set
         self.char_set_len = len(char_set)
 
         # 相关信息打印
+        # In thông tin liên quan
+        # print kích thước hình ảnh
+        # print độ dài captcha
+        # print mã captcha, lớp
+        # print đường dẫn hình ảnh
         print("-->图片尺寸: {} X {}".format(image_height, image_width))
         print("-->验证码长度: {}".format(self.max_captcha))
         print("-->验证码共{}类 {}".format(self.char_set_len, char_set))
@@ -74,17 +104,21 @@ class TrainModel(object):
         print(">>> input batch images shape: {}".format(batch_x.shape))
         print(">>> input batch labels shape: {}".format(batch_y.shape))
 
+    # args img_name
     def gen_captcha_text_image(self, img_name):
         """
         返回一个验证码的array形式和对应的字符串标签
         :return:tuple (str, numpy.array)
         """
-        # 标签
+
+        # Trả về dạng mảng của captcha và thẻ chuỗi tương ứng
+
+        # 标签 nhãn
         label = img_name.split("_")[0]
-        # 文件
+        # 文件 file ảnh
         img_file = os.path.join(self.img_path, img_name)
         captcha_image = Image.open(img_file)
-        captcha_array = np.array(captcha_image)  # 向量化
+        captcha_array = np.array(captcha_image)  # 向量化 vector hóa
         return label, captcha_array
 
     @staticmethod
@@ -94,6 +128,8 @@ class TrainModel(object):
         :param img:
         :return:
         """
+        # Hình ảnh được chuyển đổi thành hình ảnh thang độ xám.
+        # Nếu là đồ thị 3 kênh trả về đồ thị một kênh.
         if len(img.shape) > 2:
             r, g, b = img[:, :, 0], img[:, :, 1], img[:, :, 2]
             gray = 0.2989 * r + 0.5870 * g + 0.1140 * b
@@ -107,7 +143,9 @@ class TrainModel(object):
         :param text: str
         :return: numpy.array
         """
+        # Mã hóa nhãn
         text_len = len(text)
+        # Nếu nhãn lớn hơn max -> thông báo lỗi
         if text_len > self.max_captcha:
             raise ValueError('验证码最长{}个字符'.format(self.max_captcha))
 
@@ -124,6 +162,8 @@ class TrainModel(object):
 
         max_batch = int(len(self.img_list) / size)
         # print(max_batch)
+        # Nếu max_batch - 1 < 0
+        # Báo lỗi Số lượng hình ảnh tập huấn cần phải lớn hơn số lượng hình ảnh trên mỗi đợt đào tạo.
         if max_batch - 1 < 0:
             raise TrainError("训练集图片数量需要大于每批次训练的图片数量")
         if n > max_batch - 1:
@@ -142,12 +182,15 @@ class TrainModel(object):
 
     def confirm_image_suffix(self):
         # 在训练前校验所有文件格式
+        # Xác nhận tất cả các định dạng tệp trước khi đào tạo
+        # print Bắt đầu xác minh tất cả các hậu tố hình ảnh
         print("开始校验所有图片后缀")
         for index, img_name in enumerate(self.img_list):
             print("{} image pass".format(index), end='\r')
             if not img_name.endswith(sample_conf['image_suffix']):
                 raise TrainError('confirm images suffix：you request [.{}] file but get file [{}]'
                                  .format(sample_conf['image_suffix'], img_name))
+        # print Tất cả các định dạng hình ảnh được xác minh
         print("所有图片格式校验通过")
 
     def model(self):
@@ -155,6 +198,7 @@ class TrainModel(object):
         print(">>> input x: {}".format(x))
 
         # 卷积层1
+        # Lớp kết hợp
         wc1 = tf.get_variable(name='wc1', shape=[3, 3, 1, 32], dtype=tf.float32,
                               initializer=tf.contrib.layers.xavier_initializer())
         bc1 = tf.Variable(self.b_alpha * tf.random_normal([32]))
@@ -181,6 +225,7 @@ class TrainModel(object):
         next_shape = conv3.shape[1] * conv3.shape[2] * conv3.shape[3]
 
         # 全连接层1
+        # Lớp kết nối đầy đủ
         wd1 = tf.get_variable(name='wd1', shape=[next_shape, 1024], dtype=tf.float32,
                               initializer=tf.contrib.layers.xavier_initializer())
         bd1 = tf.Variable(self.b_alpha * tf.random_normal([1024]))
@@ -200,17 +245,21 @@ class TrainModel(object):
         print(">>> input batch predict shape: {}".format(y_predict.shape))
         print(">>> End model test")
         # 计算概率 损失
+        # Tính toán xác suất mất
         cost = tf.reduce_mean(tf.nn.sigmoid_cross_entropy_with_logits(logits=y_predict, labels=self.Y))
         # 梯度下降
         optimizer = tf.train.AdamOptimizer(learning_rate=0.0001).minimize(cost)
         # 计算准确率
+        # Tính toán chính xác
         predict = tf.reshape(y_predict, [-1, self.max_captcha, self.char_set_len])  # 预测结果
         max_idx_p = tf.argmax(predict, 2)  # 预测结果
         max_idx_l = tf.argmax(tf.reshape(self.Y, [-1, self.max_captcha, self.char_set_len]), 2)  # 标签
         # 计算准确率
+        # Tính toán chính xác
         correct_pred = tf.equal(max_idx_p, max_idx_l)
         accuracy = tf.reduce_mean(tf.cast(correct_pred, tf.float32))
         # 模型保存对象
+        # Mô hình lưu đối tượng
         saver = tf.train.Saver()
         with tf.Session() as sess:
             init = tf.global_variables_initializer()
@@ -277,8 +326,8 @@ def main():
     char_set = sample_conf["char_set"]
     model_save_dir = sample_conf["model_save_dir"]
     tm = TrainModel(train_image_dir, char_set, model_save_dir, verify=False)
-    tm.train_cnn()  # 开始训练模型
-    # tm.recognize_captcha()  # 识别图片示例
+    tm.train_cnn()  # 开始训练模型 Bắt đầu mô hình đào tạo
+    # tm.recognize_captcha()  # 识别图片示例 Nhận biết captcha
 
 
 if __name__ == '__main__':

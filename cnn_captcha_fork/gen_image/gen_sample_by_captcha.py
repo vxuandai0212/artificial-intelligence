@@ -17,11 +17,11 @@ def gen_special_img(text, file_path):
 
 if __name__ == '__main__':
     # 配置参数
-    root_dir = "../sample/python_captcha/"  # 图片储存路径
+    root_dir = r"C:\Users\Metaphor\Desktop\vini-intern\cnn_captcha_fork\python_captcha"  # 图片储存路径
     image_suffix = "png"  # 图片储存后缀
     characters = "0123456789"  # 图片上显示的字符集
     # characters = "0123456789abcdefghijklmnopqrstuvwxyz"
-    count = 100  # 生成多少张样本
+    count = 10000  # 生成多少张样本
     char_count = 4  # 图片上的字符数量
 
     # 设置图片高度和宽度

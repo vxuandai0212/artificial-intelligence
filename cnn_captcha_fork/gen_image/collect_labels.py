@@ -7,7 +7,7 @@ import os
 import json
 
 
-image_dir = "../sample/origin"
+image_dir = r"C:\Users\Metaphor\Desktop\vini-intern\cnn_captcha_fork\python_captcha"
 image_list = os.listdir(image_dir)
 
 labels = set()

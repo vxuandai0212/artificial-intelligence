@@ -12,7 +12,7 @@ sample_conf.online_image_dir = "./sample/online/"
 sample_conf.local_image_dir = "./sample/local/"
 
 # 模型文件夹
-sample_conf.model_save_dir = "./model/"
+sample_conf.model_save_dir = r"C:\Users\Metaphor\Desktop\vini-intern\cnn_captcha_fork\model"
 
 # 图片相关参数
 sample_conf.image_width = 100
