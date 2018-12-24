@@ -1,7 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8f80155a-1895-43e1-bc55-c3b27e9b8f3f" name="Default Changelist" comment="" />
+    <list default="true" id="8f80155a-1895-43e1-bc55-c3b27e9b8f3f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/crypto_price_predict/crawler/reddit_crawler/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vini-intern.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vini-intern.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn_captcha/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_captcha/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn_captcha/.gitmodules" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_captcha/.gitmodules" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn_captcha/CONTRIBUTING.md" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_captcha/CONTRIBUTING.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn_captcha/ISSUE_TEMPLATE.md" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_captcha/ISSUE_TEMPLATE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn_captcha/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_captcha/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn_captcha/cnn_captcha_fork/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_captcha/cnn_captcha_fork/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn_captcha/cnn_captcha_fork/correction_captcha.py" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_captcha/cnn_captcha_fork/correction_captcha.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn_captcha/cnn_captcha_fork/gen_image/collect_labels.py" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_captcha/cnn_captcha_fork/gen_image/collect_labels.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn_captcha/cnn_captcha_fork/gen_image/gen_md_content.py" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_captcha/cnn_captcha_fork/gen_image/gen_md_content.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn_captcha/cnn_captcha_fork/gen_image/gen_sample_by_captcha.py" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_captcha/cnn_captcha_fork/gen_image/gen_sample_by_captcha.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn_captcha/cnn_captcha_fork/recognition_object.py" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_captcha/cnn_captcha_fork/recognition_object.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn_captcha/cnn_captcha_fork/recognize_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_captcha/cnn_captcha_fork/recognize_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn_captcha/cnn_captcha_fork/recognize_local.py" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_captcha/cnn_captcha_fork/recognize_local.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn_captcha/cnn_captcha_fork/recognize_online.py" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_captcha/cnn_captcha_fork/recognize_online.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn_captcha/cnn_captcha_fork/recognize_time_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_captcha/cnn_captcha_fork/recognize_time_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn_captcha/cnn_captcha_fork/sample.py" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_captcha/cnn_captcha_fork/sample.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn_captcha/cnn_captcha_fork/test_batch.py" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_captcha/cnn_captcha_fork/test_batch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn_captcha/cnn_captcha_fork/train_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_captcha/cnn_captcha_fork/train_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn_captcha/cnn_captcha_fork/train_model_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_captcha/cnn_captcha_fork/train_model_v2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn_captcha/cnn_captcha_fork/verify_and_split_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_captcha/cnn_captcha_fork/verify_and_split_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn_captcha/research/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_captcha/research/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn_captcha/research/im2txt/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_captcha/research/im2txt/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn_captcha/research/im2txt/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_captcha/research/im2txt/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn_captcha/research/im2txt/conda-env/ubuntu-18-04-environment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_captcha/research/im2txt/conda-env/ubuntu-18-04-environment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn_captcha/research/im2txt/im2txt/configuration.py" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_captcha/research/im2txt/im2txt/configuration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn_captcha/research/im2txt/im2txt/data/build_mscoco_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_captcha/research/im2txt/im2txt/data/build_mscoco_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn_captcha/research/im2txt/im2txt/data/download_and_preprocess_mscoco.sh" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_captcha/research/im2txt/im2txt/data/download_and_preprocess_mscoco.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn_captcha/research/im2txt/im2txt/evaluate.py" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_captcha/research/im2txt/im2txt/evaluate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn_captcha/research/im2txt/im2txt/inference_utils/caption_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_captcha/research/im2txt/im2txt/inference_utils/caption_generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn_captcha/research/im2txt/im2txt/inference_utils/caption_generator_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_captcha/research/im2txt/im2txt/inference_utils/caption_generator_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn_captcha/research/im2txt/im2txt/inference_utils/inference_wrapper_base.py" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_captcha/research/im2txt/im2txt/inference_utils/inference_wrapper_base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn_captcha/research/im2txt/im2txt/inference_utils/vocabulary.py" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_captcha/research/im2txt/im2txt/inference_utils/vocabulary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn_captcha/research/im2txt/im2txt/inference_wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_captcha/research/im2txt/im2txt/inference_wrapper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn_captcha/research/im2txt/im2txt/ops/image_embedding.py" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_captcha/research/im2txt/im2txt/ops/image_embedding.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn_captcha/research/im2txt/im2txt/ops/image_embedding_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_captcha/research/im2txt/im2txt/ops/image_embedding_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn_captcha/research/im2txt/im2txt/ops/image_processing.py" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_captcha/research/im2txt/im2txt/ops/image_processing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn_captcha/research/im2txt/im2txt/ops/inputs.py" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_captcha/research/im2txt/im2txt/ops/inputs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn_captcha/research/im2txt/im2txt/run_inference.py" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_captcha/research/im2txt/im2txt/run_inference.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn_captcha/research/im2txt/im2txt/show_and_tell_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_captcha/research/im2txt/im2txt/show_and_tell_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn_captcha/research/im2txt/im2txt/show_and_tell_model_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_captcha/research/im2txt/im2txt/show_and_tell_model_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn_captcha/research/im2txt/im2txt/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_captcha/research/im2txt/im2txt/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn_captcha/research/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_captcha/research/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto_price_predict/crawler/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto_price_predict/crawler/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto_price_predict/crawler/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto_price_predict/crawler/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto_price_predict/crawler/exceptions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto_price_predict/crawler/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto_price_predict/crawler/test_data/geo/US_BY_STATE_1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto_price_predict/crawler/test_data/geo/US_BY_STATE_2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto_price_predict/crawler/test_data/geo/US_BY_STATE_3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto_price_predict/crawler/test_data/geo/gz_2010_us_040_00_20m.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto_price_predict/crawler/test_data/geo/gz_2010_us_050_00_20m.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto_price_predict/crawler/test_data/geo/process_geojson.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto_price_predict/crawler/test_data/geo/us.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto_price_predict/crawler/test_data/ips.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto_price_predict/crawler/test_data/place_names.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto_price_predict/crawler/test_data/screen_names.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto_price_predict/crawler/test_data/search.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto_price_predict/crawler/test_data/tweet_ids.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto_price_predict/crawler/test_data/tweets_id_range.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto_price_predict/crawler/test_data/user_ids.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto_price_predict/crawler/test_data/user_screen_names.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto_price_predict/crawler/test_data/user_timelines.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto_price_predict/crawler/test_scripts/generate_search_json.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto_price_predict/crawler/twitter_crawler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto_price_predict/crawler/twitter_streamer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto_price_predict/crawler/twitter_tracker.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto_price_predict/crawler/util.py" beforeDir="false" />
+    </list>
+    <list id="d0741651-14fa-445b-8d27-d01a7286469e" name="Revert: add crawler package" comment="">
+      <change beforePath="$PROJECT_DIR$/crypto_price_predict/crawler/test_data/geo/us_counties.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto_price_predict/crawler/test_scripts/search_configs/cancer_search.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto_price_predict/crawler/test_scripts/search_configs/hpv_search.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto_price_predict/crawler/test_scripts/search_configs/hpv_search_en_es_by_geocodes.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto_price_predict/crawler/test_scripts/search_configs/lynchsyndrome_search.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto_price_predict/crawler/test_scripts/search_terms_configs/cancer_search_terms_config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto_price_predict/crawler/test_scripts/search_terms_configs/hpv_search_en_es_by_geocodes_search_terms_config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto_price_predict/crawler/test_scripts/search_terms_configs/hpv_search_terms_config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto_price_predict/crawler/test_scripts/search_terms_configs/lynchsyndrome_search_terms_config.json" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,21 +97,110 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/crypto_price_predict/crawler/config.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/crypto_price_predict/crawler/twitter_crawler/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="-153" />
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/crypto_price_predict/crawler/twitter_crawler/test_data/search.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="125" selection-start-column="125" selection-end-column="125" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/crypto_price_predict/crawler/twitter_crawler/twitter_tracker.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="52" column="62" selection-start-line="52" selection-start-column="62" selection-end-line="52" selection-end-column="62" />
+              <folding>
+                <element signature="e#51#65#0" expanded="true" />
+                <element signature="e#2775#4233#0" />
+                <element signature="e#4327#5853#0" />
+                <element signature="e#5931#7316#0" />
+                <element signature="e#7401#8793#0" />
+                <element signature="e#8898#10165#0" />
+                <element signature="e#10244#11620#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/crypto_price_predict/crawler/twitter_crawler/twitter_crawler.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="201">
+              <caret line="408" lean-forward="true" selection-start-line="408" selection-end-line="408" />
+              <folding>
+                <element signature="e#25#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/crypto_price_predict/crawler/twitter_crawler/config.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/crypto_price_predict/crawler/twitter_crawler/test_scripts/generate_search_json.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#47#61#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/crypto_price_predict/crawler/twitter_crawler/test_scripts/search_terms_configs/hpv_search_terms_config.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/crypto_price_predict/crawler/twitter_crawler/test_data/place_names.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/cnn_captcha/cnn_captcha_fork/train_model.py" />
+        <option value="$PROJECT_DIR$/crypto_price_predict/crawler/reddit_crawler/stack/spiders/stack_crawler.py" />
+        <option value="$PROJECT_DIR$/crypto_price_predict/crawler/twitter_crawler/__init__.py" />
+        <option value="$PROJECT_DIR$/crypto_price_predict/crawler/twitter_crawler/config.json" />
+        <option value="$PROJECT_DIR$/crypto_price_predict/crawler/twitter_crawler/test_data/search.json" />
+        <option value="$PROJECT_DIR$/crypto_price_predict/crawler/twitter_crawler/twitter_crawler.py" />
+      </list>
+    </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="25" />
@@ -36,6 +213,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -43,11 +221,35 @@
               <item name="vini-intern" type="b2602c69:ProjectViewProjectNode" />
               <item name="vini-intern" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="vini-intern" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vini-intern" type="462c0819:PsiDirectoryNode" />
+              <item name="crypto_price_predict" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vini-intern" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vini-intern" type="462c0819:PsiDirectoryNode" />
+              <item name="crypto_price_predict" type="462c0819:PsiDirectoryNode" />
+              <item name="crawler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vini-intern" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vini-intern" type="462c0819:PsiDirectoryNode" />
+              <item name="crypto_price_predict" type="462c0819:PsiDirectoryNode" />
+              <item name="crawler" type="462c0819:PsiDirectoryNode" />
+              <item name="reddit_crawler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vini-intern" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vini-intern" type="462c0819:PsiDirectoryNode" />
+              <item name="crypto_price_predict" type="462c0819:PsiDirectoryNode" />
+              <item name="crawler" type="462c0819:PsiDirectoryNode" />
+              <item name="twitter_crawler" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -56,6 +258,12 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Metaphor\Desktop\vini-intern\crypto_price_predict\crawler\twitter_crawler" />
+      <recent name="C:\Users\Metaphor\Desktop\vini-intern\crypto_price_predict\crawler\reddit_crawler" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -75,11 +283,14 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="8f80155a-1895-43e1-bc55-c3b27e9b8f3f" name="Default Changelist" comment="" />
+      <changelist id="d0741651-14fa-445b-8d27-d01a7286469e" name="Revert: add crawler package" comment="" />
       <created>1545380962175</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1545380962175</updated>
-      <workItem from="1545380963426" duration="1611000" />
+      <workItem from="1545380963426" duration="4526000" />
+      <workItem from="1545386051041" duration="1499000" />
+      <workItem from="1545619421774" duration="6149000" />
     </task>
     <task id="LOCAL-00001" summary="Revert &quot;them comment tieng viet cho code&quot;&#10;&#10;This reverts commit a1d3a81e">
       <created>1545382196044</created>
@@ -92,20 +303,14 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1611000" />
+    <option name="totallyTimeSpent" value="12174000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.38880485" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info active="true" anchor="bottom" id="Version Control" visible="true" weight="0.3289689" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -113,11 +318,17 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="SciView" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3289689" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,35 +359,194 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Revert &quot;them comment tieng viet cho code&quot;&#10;&#10;This reverts commit a1d3a81e" />
     <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;them comment tieng viet cho code&quot;&#10;&#10;This reverts commit a1d3a81e" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cnn_captcha_fork/sample.py">
+    <entry file="file://$PROJECT_DIR$/cnn_captcha_fork/sample.py" />
+    <entry file="file://$PROJECT_DIR$/cnn_captcha_fork/train_model.py" />
+    <entry file="file://$PROJECT_DIR$/crypto_price_predict/crawler/config.json" />
+    <entry file="file://$PROJECT_DIR$/crypto_price_predict/crawler/reddit_crawler/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crypto_price_predict/crawler/reddit_crawler/stack/stack/spiders/crawl_spider.py" />
+    <entry file="file://$PROJECT_DIR$/crypto_price_predict/crawler/reddit_crawler/stack/stack/items.py" />
+    <entry file="file://$PROJECT_DIR$/cnn_captcha/cnn_captcha_fork/train_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5525">
+          <caret line="333" column="10" selection-start-line="333" selection-start-column="10" selection-end-line="333" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crypto_price_predict/crawler/reddit_crawler/stack/spiders/stack_crawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crypto_price_predict/crawler/reddit_crawler/stack/spiders/stack_spider.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
-            <element signature="e#0#29#0" expanded="true" />
+            <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cnn_captcha_fork/train_model.py">
+    <entry file="file://$PROJECT_DIR$/crypto_price_predict/crawler/reddit_crawler/stack/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crypto_price_predict/crawler/reddit_crawler/stack/items.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crypto_price_predict/crawler/reddit_crawler/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crypto_price_predict/crawler/reddit_crawler/stack/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="305">
+          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
           <folding>
-            <element signature="e#24#47#0" expanded="true" />
+            <element signature="e#292#306#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crypto_price_predict/crawler/config.json">
+    <entry file="file://$PROJECT_DIR$/crypto_price_predict/crawler/reddit_crawler/stack/spiders/crawl_spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crypto_price_predict/crawler/twitter_crawler/util.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crypto_price_predict/crawler/twitter_crawler/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crypto_price_predict/crawler/twitter_crawler/test_scripts/generate_search_json.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#47#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crypto_price_predict/crawler/twitter_crawler/test_scripts/search_terms_configs/hpv_search_terms_config.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crypto_price_predict/crawler/twitter_crawler/test_data/place_names.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crypto_price_predict/crawler/twitter_crawler/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crypto_price_predict/crawler/twitter_crawler/data/search_query/20181224/5e511dda01bc2af0413a33470310d671">
+      <provider editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="137">
+          <caret line="189" column="20" selection-start-line="189" selection-end-line="190" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crypto_price_predict/crawler/twitter_crawler/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-153" />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crypto_price_predict/crawler/twitter_crawler/logs/twitter_tracker_search.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1750" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crypto_price_predict/crawler/twitter_crawler/data/search_query/20181224/5b78010810e13cd7de7524df981fed01">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="60" column="8" lean-forward="true" selection-start-line="60" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crypto_price_predict/crawler/twitter_crawler/test_data/search.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="125" selection-start-column="125" selection-end-column="125" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crypto_price_predict/crawler/twitter_crawler/twitter_tracker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="52" column="62" selection-start-line="52" selection-start-column="62" selection-end-line="52" selection-end-column="62" />
+          <folding>
+            <element signature="e#51#65#0" expanded="true" />
+            <element signature="e#2775#4233#0" />
+            <element signature="e#4327#5853#0" />
+            <element signature="e#5931#7316#0" />
+            <element signature="e#7401#8793#0" />
+            <element signature="e#8898#10165#0" />
+            <element signature="e#10244#11620#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crypto_price_predict/crawler/twitter_crawler/data/search_query/search.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crypto_price_predict/crawler/twitter_crawler/data/search_query/20181224/daf15dffd35215b07d40c3d0f3fca1b3">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="81" selection-start-column="81" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crypto_price_predict/crawler/twitter_crawler/twitter_crawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="408" lean-forward="true" selection-start-line="408" selection-end-line="408" />
+          <folding>
+            <element signature="e#25#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

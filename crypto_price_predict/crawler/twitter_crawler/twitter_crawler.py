@@ -17,6 +17,15 @@ import re
 import twython
 import util
 
+# cài đặt môi trường mongodb
+# dbname: tweet_data_ml
+# collection for bitcoin tweet: tweet_btc
+
+from pymongo import MongoClient
+client = MongoClient('localhost', 27017)
+db = client.tweet_data_ml
+tweet_btc_collection = db.tweet_btc
+
 from exceptions import MissingArgs
 
 MAX_RETRY_CNT = 3
@@ -348,7 +357,7 @@ class TwitterCrawler(twython.Twython):
 
         logger.info("[%s] total tweets: %d; since_id: [%d]"%(user_id, cnt, since_id))
         return current_since_id, False
-
+    # tìm tweet bằng keyword
     def search_by_query(self, query, since_id = 0, geocode=None, lang=None, output_filename = None):
 
         if not query:
@@ -386,11 +395,12 @@ class TwitterCrawler(twython.Twython):
                 else:
                     tweets = self.search(q=query, geocode=geo, since_id=since_id, lang=lang, tweet_mode='extended', result_type='recent', count=100)
 
-
                 prev_max_id = current_max_id # if no new tweets are found, the prev_max_id will be the same as current_max_id
 
                 with open(filename, 'a+', newline='', encoding='utf-8') as f:
                     for tweet in tweets['statuses']:
+                        # thêm record vào collection tweet_btc_collection
+                        tweet_btc_collection.insert_one(tweet)
                         f.write('%s\n'%json.dumps(tweet))
                         if current_max_id == 0 or current_max_id > int(tweet['id']):
                             current_max_id = int(tweet['id'])
