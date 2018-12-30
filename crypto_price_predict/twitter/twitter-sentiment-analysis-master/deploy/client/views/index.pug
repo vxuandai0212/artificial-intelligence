@@ -1,0 +1,153 @@
+doctype html
+html.no-js(lang='zxx')
+  head
+    // Mobile Specific Meta
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    // Favicon
+    link(rel='shortcut icon', href='img/logo.png')
+    // Author Meta
+    meta(name='author', content='CodePixar')
+    // Meta Description
+    meta(name='description', content='')
+    // Meta Keyword
+    meta(name='keywords', content='')
+    // meta character set
+    meta(charset='UTF-8')
+    // Site Title
+    title BBS
+    link(href='https://fonts.googleapis.com/css?family=Poppins:300,500,600,900', rel='stylesheet')
+    //
+      CSS
+      =============================================
+    link(rel='stylesheet', href='css/linearicons.css')
+    link(rel='stylesheet', href='css/font-awesome.min.css')
+    link(rel='stylesheet', href='css/nice-select.css')
+    link(rel='stylesheet', href='css/magnific-popup.css')
+    link(rel='stylesheet', href='css/bootstrap.css')
+    link(rel='stylesheet', href='css/main.css')
+    style.
+      canvas {
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        /* width: 400px;
+        height: 400px; */
+      }
+      div.prediction{
+        margin-top: 15px;
+      }
+      div.prediction > a{
+        font-size: 20px;
+        color: white!important;
+      }
+      div.label,div.prob{
+        color: white;
+        margin: 10px;
+      }
+  body
+    .main-wrapper-first.relative
+      header
+        .container
+          .header-wrap
+            .header-top.d-flex.justify-content-between.align-items-center
+              .logo
+                a(href='index.html')
+                  img(src='img/logo.png', alt='')
+      .banner-area
+        .container
+          .row.justify-content-center.height.align-items-center
+            #app.col-lg-6
+              #mc_embed_signup
+                .subscription.relative
+                  input(v-model='tweet', placeholder='Enter tweet', onfocus="this.placeholder = ''", onblur="this.placeholder = 'Enter tweet'", required='')
+                  button.primary-btn(@click='predict')
+                    span Predict
+                    span.lnr.lnr-arrow-right
+              .label Label: {{prediction.label}}
+              .prob Probability: {{prediction.prob}}
+            .col-lg-6
+              canvas#canvas
+              .banner-content.text-center.prediction
+                a Prediction: Bitcoin is going to Rise
+    script(src='js/vendor/jquery-2.2.4.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js', integrity='sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4', crossorigin='anonymous')
+    script(src='js/vendor/bootstrap.min.js')
+    script(src='js/jquery.nice-select.min.js')
+    script(src='js/jquery.magnific-popup.min.js')
+    script(src='https://cdn.jsdelivr.net/npm/vue/dist/vue.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js')
+    script.
+      var ctx = document.getElementById("canvas");
+      var myBarChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ["Negative", "Positive"],
+            datasets: [{
+                label: '# of Tweets',
+                data: [12, 19],
+                backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)'
+                ],
+                borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)'
+                ],
+            borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero:true,
+                        fontColor: "white",
+                    }
+                }],
+                xAxes: [{
+                    ticks: {
+                        fontColor: "white",
+                    }
+                }]
+            },
+            legend: {
+                labels: {
+                    // This more specific font property overrides the global property
+                    fontColor: 'black'
+                }
+            },
+            title: {
+                display: true,
+                text: 'Tweets of people about bitcoin this week',
+                fontColor: "white",
+                fontSize: '20',
+            }
+        }
+      });
+    script.
+      var app = new Vue({
+        el: '#app',
+        data: {
+            tweet: '',
+            prediction: {
+                label: '',
+                prob: null
+            }
+        },
+        methods: {
+            predict() {
+                var com = this;
+                axios.post('http://192.168.52.7:5000/predict', {
+                    tweet: com.tweet
+                })
+                .then(function (response) {
+                    com.prediction.label = response.data.predictions[0].label;
+                    com.prediction.prob = response.data.predictions[0].probability;
+                })
+                .catch(function (error) {
+                    console.log(error);
+                });
+                }
+            }
+        })

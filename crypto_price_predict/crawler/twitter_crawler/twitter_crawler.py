@@ -394,14 +394,11 @@ class TwitterCrawler(twython.Twython):
                     tweets = self.search(q=query, geocode=geo, since_id=since_id, lang=lang, tweet_mode='extended', max_id=current_max_id-1, result_type='recent', count=100)
                 else:
                     tweets = self.search(q=query, geocode=geo, since_id=since_id, lang=lang, tweet_mode='extended', result_type='recent', count=100)
-
                 prev_max_id = current_max_id # if no new tweets are found, the prev_max_id will be the same as current_max_id
-
                 with open(filename, 'a+', newline='', encoding='utf-8') as f:
                     for tweet in tweets['statuses']:
-                        # thêm record vào collection tweet_btc_collection
-                        tweet_btc_collection.insert_one(tweet)
                         f.write('%s\n'%json.dumps(tweet))
+                        tweet_btc_collection.insert_one(tweet)
                         if current_max_id == 0 or current_max_id > int(tweet['id']):
                             current_max_id = int(tweet['id'])
                         if current_since_id == 0 or current_since_id < int(tweet['id']):
