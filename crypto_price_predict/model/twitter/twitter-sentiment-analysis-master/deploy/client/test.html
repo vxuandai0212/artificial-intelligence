@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bitcoin and tweets sentiment analysis</title>
+</head>
+<body>
+    <canvas id="canvas" width="1200px" height="800px"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+<script>
+var yellow = 'rgb(255, 205, 86)'
+var red = 'rgb(255, 99, 132)'
+var blue = 'rgb(54, 162, 235)'
+var response = {"statistics":[{"date":1547006399000,"neg":653,"pos":693,"price":4004.4586377436},{"date":1547010000000,"neg":0,"pos":0,"price":4014.3202211139},{"date":1547013599000,"neg":0,"pos":0,"price":4002.6540179937},{"date":1547017199000,"neg":0,"pos":0,"price":4002.8852309665},{"date":1547020799000,"neg":0,"pos":0,"price":4004.5840580325},{"date":1547024400000,"neg":0,"pos":0,"price":4000.2922755874},{"date":1547028000000,"neg":0,"pos":0,"price":3999.7843801274},{"date":1547031599000,"neg":0,"pos":0,"price":4003.0567518614},{"date":1547035199000,"neg":0,"pos":0,"price":4008.6829145892},{"date":1547038799000,"neg":0,"pos":0,"price":3998.9681306957},{"date":1547042399000,"neg":0,"pos":0,"price":3994.3981657401},{"date":1547046000000,"neg":0,"pos":0,"price":3974.6590637474},{"date":1547049600000,"neg":0,"pos":0,"price":3981.6060285094},{"date":1547053199000,"neg":0,"pos":0,"price":3988.221064509},{"date":1547056799000,"neg":1046,"pos":1326,"price":3989.9338263453},{"date":1547060400000,"neg":1104,"pos":1442,"price":3995.1728215276},{"date":1547063999000,"neg":1181,"pos":1280,"price":4005.2872523584},{"date":1547067599000,"neg":912,"pos":921,"price":3998.6216018668},{"date":1547071200000,"neg":0,"pos":0,"price":3995.5585271785},{"date":1547074800000,"neg":0,"pos":0,"price":3995.3251931641},{"date":1547078400000,"neg":0,"pos":0,"price":3990.5593234975},{"date":1547081999000,"neg":0,"pos":0,"price":4020.0206739894},{"date":1547085599000,"neg":0,"pos":0,"price":4013.6303424397},{"date":1547089199000,"neg":0,"pos":0,"price":4009.5086796746},{"date":1547092799000,"neg":0,"pos":0,"price":4008.3364351523},{"date":1547096400000,"neg":0,"pos":0,"price":4018.792953033},{"date":1547100000000,"neg":0,"pos":0,"price":4018.4187987743},{"date":1547103599000,"neg":0,"pos":0,"price":3812.2803069288},{"date":1547107199000,"neg":0,"pos":0,"price":3793.6063255292},{"date":1547110800000,"neg":0,"pos":0,"price":3781.4969073584},{"date":1547114399000,"neg":0,"pos":0,"price":3773.7833165192},{"date":1547118000000,"neg":0,"pos":0,"price":3767.3553721288},{"date":1547121599000,"neg":0,"pos":0,"price":3772.9157852672},{"date":1547125199000,"neg":0,"pos":0,"price":3764.5474421402},{"date":1547128800000,"neg":0,"pos":0,"price":3759.2570090711},{"date":1547132399000,"neg":0,"pos":0,"price":3755.0553564853},{"date":1547135999000,"neg":0,"pos":0,"price":3760.9222003603},{"date":1547139599000,"neg":0,"pos":0,"price":3613.8505362955},{"date":1547143200000,"neg":1147,"pos":1344,"price":3611.6345199362},{"date":1547146800000,"neg":1211,"pos":1608,"price":3596.6315996183},{"date":1547150400000,"neg":1245,"pos":1602,"price":3623.7315351203},{"date":1547153999000,"neg":1285,"pos":1648,"price":3618.4201340196},{"date":1547157599000,"neg":1184,"pos":1294,"price":3618.4192217892},{"date":1547161199000,"neg":920,"pos":1068,"price":3617.3462911588},{"date":1547164800000,"neg":1227,"pos":1356,"price":3619.4082217026},{"date":1547168400000,"neg":1311,"pos":1444,"price":3634.7186828525},{"date":1547171999000,"neg":1480,"pos":1603,"price":3620.6395595031},{"date":1547175599000,"neg":1184,"pos":1453,"price":3609.9400217642},{"date":1547179200000,"neg":656,"pos":690,"price":3613.1881559996},{"date":1547182799000,"neg":0,"pos":0,"price":3591.7727832131},{"date":1547186400000,"neg":0,"pos":0,"price":3603.015381987},{"date":1547189999000,"neg":0,"pos":0,"price":3613.9686455199},{"date":1547193599000,"neg":0,"pos":0,"price":3623.582954274},{"date":1547197200000,"neg":0,"pos":0,"price":3635.22078845},{"date":1547200799000,"neg":0,"pos":0,"price":3621.7687530278},{"date":1547204399000,"neg":0,"pos":0,"price":3615.7755436933},{"date":1547207999000,"neg":0,"pos":0,"price":3619.3320904862},{"date":1547211599000,"neg":0,"pos":0,"price":3613.6977858085},{"date":1547215199000,"neg":0,"pos":0,"price":3599.0320310447},{"date":1547218799000,"neg":0,"pos":0,"price":3626.0219777923},{"date":1547222399000,"neg":0,"pos":0,"price":3615.3344957201},{"date":1547225999000,"neg":0,"pos":0,"price":3629.8979345682},{"date":1547229599000,"neg":0,"pos":0,"price":3637.1437270298},{"date":1547233200000,"neg":0,"pos":0,"price":3634.7541346423},{"date":1547236800000,"neg":0,"pos":0,"price":3636.8711064459},{"date":1547240399000,"neg":0,"pos":0,"price":3641.4240409332},{"date":1547243999000,"neg":0,"pos":0,"price":3629.723766428},{"date":1547247599000,"neg":0,"pos":0,"price":3606.1648903844},{"date":1547251199000,"neg":0,"pos":0,"price":3629.7373546214},{"date":1547254799000,"neg":0,"pos":0,"price":3631.2349849944},{"date":1547258399000,"neg":0,"pos":0,"price":3617.1185561254},{"date":1547261999000,"neg":0,"pos":0,"price":3622.2810536501},{"date":1547265600000,"neg":0,"pos":0,"price":3632.7274844766},{"date":1547269199000,"neg":0,"pos":0,"price":3621.082137088},{"date":1547272799000,"neg":0,"pos":0,"price":3619.5847844043},{"date":1547276399000,"neg":0,"pos":0,"price":3603.5641887836},{"date":1547280000000,"neg":0,"pos":0,"price":3611.3502836705},{"date":1547283600000,"neg":0,"pos":0,"price":3607.2565211839},{"date":1547287199000,"neg":0,"pos":0,"price":3612.0573455259},{"date":1547290799000,"neg":0,"pos":0,"price":3608.009203345},{"date":1547294400000,"neg":0,"pos":0,"price":3603.5291790106},{"date":1547297999000,"neg":0,"pos":0,"price":3621.144181712},{"date":1547301599000,"neg":0,"pos":0,"price":3616.7075764585},{"date":1547305199000,"neg":0,"pos":0,"price":3624.7337772417},{"date":1547308800000,"neg":0,"pos":0,"price":3622.701693522},{"date":1547312400000,"neg":0,"pos":0,"price":3618.8151470949},{"date":1547315999000,"neg":0,"pos":0,"price":3623.7598034604},{"date":1547319599000,"neg":0,"pos":0,"price":3620.4203264981},{"date":1547323199000,"neg":0,"pos":0,"price":3620.9253650547},{"date":1547326799000,"neg":0,"pos":0,"price":3625.7275725883},{"date":1547330400000,"neg":0,"pos":0,"price":3620.6598148884},{"date":1547334000000,"neg":0,"pos":0,"price":3611.5282378524},{"date":1547337599000,"neg":0,"pos":0,"price":3614.4210419887},{"date":1547341199000,"neg":0,"pos":0,"price":3598.6587927813},{"date":1547344799000,"neg":0,"pos":0,"price":3597.9616032547},{"date":1547348399000,"neg":0,"pos":0,"price":3615.9332270839},{"date":1547351998000,"neg":0,"pos":0,"price":3620.8904010166},{"date":1547355599000,"neg":0,"pos":0,"price":3613.5027245852},{"date":1547359200000,"neg":0,"pos":0,"price":3611.9987780346},{"date":1547366399000,"neg":0,"pos":0,"price":3611.2780551307},{"date":1547370000000,"neg":0,"pos":0,"price":3605.0902730139},{"date":1547373599000,"neg":0,"pos":0,"price":3614.4927181627},{"date":1547377199000,"neg":0,"pos":0,"price":3613.2789789852},{"date":1547380799000,"neg":0,"pos":0,"price":3618.6622453065},{"date":1547384399000,"neg":0,"pos":0,"price":3613.731295518},{"date":1547388000000,"neg":0,"pos":0,"price":3616.7041800254},{"date":1547391600000,"neg":0,"pos":0,"price":3602.7140391784},{"date":1547395199000,"neg":0,"pos":0,"price":3608.7975121504},{"date":1547398799000,"neg":0,"pos":0,"price":3499.6874463448},{"date":1547402399000,"neg":1078,"pos":1034,"price":3512.3396799056},{"date":1547405999000,"neg":981,"pos":1069,"price":3496.6754500055},{"date":1547409599000,"neg":1039,"pos":995,"price":3499.14898044},{"date":1547413199000,"neg":887,"pos":885,"price":3491.9250646025},{"date":1547416799000,"neg":902,"pos":920,"price":3511.1382674525},{"date":1547420400000,"neg":977,"pos":976,"price":3497.6693915005},{"date":1547423999000,"neg":1047,"pos":961,"price":3503.8996768286},{"date":1547427599000,"neg":1142,"pos":926,"price":3510.1140315583},{"date":1547431199000,"neg":1206,"pos":984,"price":3517.7391064626},{"date":1547434799000,"neg":1113,"pos":988,"price":3522.905227422},{"date":1547438399000,"neg":486,"pos":431,"price":3514.7349634416},{"date":1547441999000,"neg":0,"pos":0,"price":3525.0715426572},{"date":1547445599000,"neg":0,"pos":0,"price":3528.3732780176},{"date":1547449199000,"neg":0,"pos":0,"price":3538.9059664722},{"date":1547452799000,"neg":0,"pos":0,"price":3537.3521273839},{"date":1547456399000,"neg":0,"pos":0,"price":3530.7374695635},{"date":1547459999000,"neg":0,"pos":0,"price":3532.9963271935},{"date":1547463599000,"neg":0,"pos":0,"price":3527.2880156209},{"date":1547467199000,"neg":0,"pos":0,"price":3517.5426362091},{"date":1547470799000,"neg":0,"pos":0,"price":3532.9849461128},{"date":1547474400000,"neg":0,"pos":0,"price":3524.8508034988},{"date":1547478000000,"neg":0,"pos":0,"price":3525.3178618232},{"date":1547481600000,"neg":0,"pos":0,"price":3662.2832968884},{"date":1547485199000,"neg":0,"pos":0,"price":3647.7017540944},{"date":1547488799000,"neg":1242,"pos":1235,"price":3659.3149310117},{"date":1547492400000,"neg":1135,"pos":1146,"price":3661.0702930888},{"date":1547495999000,"neg":1173,"pos":1336,"price":3669.8834800187},{"date":1547499600000,"neg":1158,"pos":1283,"price":3660.0886687259},{"date":1547503200000,"neg":967,"pos":1052,"price":3655.4988648333},{"date":1547506799000,"neg":1269,"pos":1214,"price":3654.3470673605},{"date":1547510399000,"neg":977,"pos":1103,"price":3655.8230486667},{"date":1547513999000,"neg":1030,"pos":1074,"price":3663.5864223012},{"date":1547517600000,"neg":1302,"pos":1240,"price":3663.6651591254},{"date":1547521200000,"neg":1125,"pos":1179,"price":3653.7439663528},{"date":1547524799000,"neg":0,"pos":0,"price":3657.1798639286},{"date":1547528399000,"neg":0,"pos":0,"price":3658.4495870969},{"date":1547531999000,"neg":0,"pos":0,"price":3651.5215811555},{"date":1547535600000,"neg":0,"pos":0,"price":3648.6282677227},{"date":1547539200000,"neg":0,"pos":0,"price":3659.7349176033},{"date":1547542800000,"neg":0,"pos":0,"price":3655.9921904921},{"date":1547546398000,"neg":0,"pos":0,"price":3632.1544006856},{"date":1547549998000,"neg":0,"pos":0,"price":3638.8246758283},{"date":1547553599000,"neg":0,"pos":0,"price":3639.4059454741},{"date":1547557200000,"neg":0,"pos":0,"price":3630.8189700319},{"date":1547560799000,"neg":0,"pos":0,"price":3649.8498974055},{"date":1547564399000,"neg":0,"pos":0,"price":3646.245285931},{"date":1547567999000,"neg":0,"pos":0,"price":3622.7227553026},{"date":1547571599000,"neg":0,"pos":0,"price":3622.3330781422},{"date":1547575199000,"neg":1041,"pos":1069,"price":3626.0170033256},{"date":1547578800000,"neg":982,"pos":1041,"price":3622.4208348521},{"date":1547582400000,"neg":1045,"pos":1230,"price":3626.3927304338},{"date":1547585999000,"neg":951,"pos":1227,"price":3557.994386901},{"date":1547589599000,"neg":861,"pos":1139,"price":3562.7070611823},{"date":1547593199000,"neg":1033,"pos":1030,"price":3568.7512587366},{"date":1547596800000,"neg":224,"pos":199,"price":3576.0124133363},{"date":1547600399000,"neg":0,"pos":0,"price":3584.2303821243},{"date":1547603999000,"neg":0,"pos":0,"price":3589.5723475239},{"date":1547607598000,"neg":0,"pos":0,"price":3583.999254604}],"success":true}
+var coin_value = response.statistics.map(record => record.price.toFixed(2))
+var coin_date = response.statistics.map(record => moment(record.date).format('MMMM DD, YYYY HH:mm:ss'))
+var neg = response.statistics.map(record => record.neg)
+var pos = response.statistics.map(record => record.pos)
+var config = {
+	type: 'line',
+	data: {
+		labels: coin_date,
+		datasets: [{
+			label: 'Negative tweets',
+			backgroundColor: red,
+			borderColor: red,
+			data: neg,
+			yAxisID: 'y-axis-2',
+			fill: false,
+		}, {
+			label: 'Positive tweets',
+			fill: false,
+			backgroundColor: blue,
+			borderColor: blue,
+			data: pos,
+			yAxisID: 'y-axis-2',
+		}, {
+			label: 'Bitcoin price',
+			fill: false,
+			backgroundColor: yellow,
+			borderColor: yellow,
+			data: coin_value,
+			yAxisID: 'y-axis-1',
+		}]
+	},
+	options: {
+		responsive: true,
+		title: {
+			display: true,
+			text: 'Bitcoin and tweets sentiment analysis from 09/01/2019 to 16/01/2019'
+		},
+		tooltips: {
+			mode: 'index',
+			intersect: false,
+		},
+		hover: {
+			mode: 'nearest',
+			intersect: true
+		},
+		scales: {
+			xAxes: [{
+				display: true,
+				scaleLabel: {
+					display: true,
+					labelString: 'Week'
+				},
+				distribution: 'series',
+			}],
+			yAxes: [{
+				display: true,
+				scaleLabel: {
+					display: true,
+					labelString: 'Bitcoin price ($)'
+				},
+				position: 'left',
+				id: 'y-axis-1',
+			}, {
+				display: true,
+				scaleLabel: {
+					display: true,
+					labelString: 'Tweets number'
+				},
+				position: 'right',
+				id: 'y-axis-2',
+			}]
+		}
+	}
+};
+
+window.onload = function() {
+	var ctx = document.getElementById('canvas').getContext('2d');
+	window.myLine = new Chart(ctx, config);
+};
+</script>
+</body>
+</html>
