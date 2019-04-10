@@ -1,35 +1,8 @@
-#!/usr/bin/env python
-
-# Copyright 2017 Google Inc. All Rights Reserved.
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#      http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-
-"""Google Cloud Speech API sample application using the streaming API.
-
-NOTE: This module requires the additional dependency `pyaudio`. To install
-using pip:
-
-    pip install pyaudio
-
-Example usage:
-    python transcribe_streaming_mic.py
-"""
-
-# [START speech_transcribe_streaming_mic]
 from __future__ import division
 
 import re
 import sys
+import time
 
 from google.cloud import speech
 from google.cloud.speech import enums
@@ -41,6 +14,7 @@ from six.moves import queue
 RATE = 16000
 CHUNK = int(RATE / 10)  # 100ms
 
+RECORDING = True
 
 class MicrophoneStream(object):
     """Opens a recording stream as a generator yielding the audio chunks."""
@@ -93,9 +67,9 @@ class MicrophoneStream(object):
             if chunk is None:
                 return
             data = [chunk]
-
+            global RECORDING
             # Now consume whatever other data's still buffered.
-            while True:
+            while RECORDING:
                 try:
                     chunk = self._buff.get(block=False)
                     if chunk is None:
@@ -103,7 +77,6 @@ class MicrophoneStream(object):
                     data.append(chunk)
                 except queue.Empty:
                     break
-
             yield b''.join(data)
 
 
@@ -162,7 +135,7 @@ def listen_print_loop(responses):
             num_chars_printed = 0
 
 
-def main(trans):
+def main():
     # See http://g.co/cloud/speech/docs/languages
     # for a list of supported languages.
     language_code = 'vi-VN'  # a BCP-47 language tag
@@ -177,17 +150,29 @@ def main(trans):
         interim_results=True)
 
     with MicrophoneStream(RATE, CHUNK) as stream:
-        print('Say something')
+        print('recording')
+        global RECORDING
         audio_generator = stream.generator()
         requests = (types.StreamingRecognizeRequest(audio_content=content)
                     for content in audio_generator)
 
+        time.sleep(4)
+
+        # stream.next()
+        # RECORDING = False
+        # for i in audio_generator:
+        #     print(i)
+        stream.closed = True
+        print('finish')
+
         responses = client.streaming_recognize(streaming_config, requests)
+        for r in responses:
+            print(r)
 
         # Now, put the transcription responses to use.
         listen_print_loop(responses)
 
 
+
 if __name__ == '__main__':
     main()
-# [END speech_transcribe_streaming_mic]

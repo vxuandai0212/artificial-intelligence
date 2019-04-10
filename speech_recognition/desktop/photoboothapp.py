@@ -3,6 +3,7 @@ from __future__ import print_function
 from PIL import Image
 from PIL import ImageTk
 import tkinter as tki
+from tkinter import scrolledtext
 import threading
 import datetime
 import imutils
@@ -11,8 +12,13 @@ import os
 from imutils.video import VideoStream
 import time
 import multiprocessing as mp
-import transcribe_streaming_mic as ts
+from PIL import ImageTk, Image
 
+from audio import recordThread
+
+from autocomplete_combobox import Combobox_Autocomplete
+
+from language_code import langDict
 
 class PhotoBoothApp:
     def __init__(self, vs):
@@ -31,11 +37,6 @@ class PhotoBoothApp:
         # start a thread that constantly pools the video sensor for
         # the most recently read frame
         self.stopEvent = threading.Event()
-        self.thread = threading.Thread(target=self.videoLoop, args=())
-        self.thread.start()
-
-        # record audio thread
-        self.audio_process = mp.Process(target=self.record_audio, args=())
 
         # set a callback to handle when the window is closed
         self.root.wm_title("PyImageSearch PhotoBooth")
@@ -43,54 +44,74 @@ class PhotoBoothApp:
 
         # Add a title
         self.root.title("Streaming App")
-        self.root.geometry('{}x{}'.format(700, 650))
+        self.root.geometry('{}x{}'.format(700, 500))
 
         self.top_frame = tki.LabelFrame(self.root, text='Stream Screen')
         self.bot_frame = tki.LabelFrame(self.root, text='Transcribe')
 
-        self.top_frame.grid(row=0, sticky="ew")
-        self.bot_frame.grid(row=2, sticky="ew")
+        self.top_frame.grid(row=0, sticky="ew", column=0)
+        self.bot_frame.grid(row=2, sticky="ew", column=0)
 
-        self.trans = tki.Text(self.bot_frame, height=10, width=50, font=("bold", 10,))
-        self.trans.grid(row=2, padx=5, pady=5)
-        self.trans.configure(state='disabled')
+
+        scrol_w = 69
+        scrol_h = 15  # increase sizes
+        self.scrol = scrolledtext.ScrolledText(self.bot_frame, width=scrol_w, height=scrol_h, wrap=tki.WORD)
+        self.scrol.grid(column=0, row=3, sticky='WE')
+
+        # Adding options
+        self.option_frame = tki.LabelFrame(self.root, text='Options')
+        self.option_frame.grid(row=0, column=1, sticky='N', padx=10)
 
         # Adding a Button
-        self.record_btn = tki.Button(self.bot_frame, text="Start", command=self.click_me)
-        self.record_btn.grid(row=2, column=3)
+        self.record_btn = tki.Button(self.option_frame, text="Start", command=self.click_me)
+        self.record_btn.grid(row=3, column=1, pady=(0,5))
 
-    # def insert(self):
-    #     self.trans.configure(state='normal')
-    #     self.trans.insert(tki.END, 'hi')
-    #     self.trans.configure(state='disabled')
-        # self.trans.tag_add("here", "1.0", "1.7")
-        # self.trans.tag_add("start", "1.8", "1.13")
-        # self.trans.tag_config("here", background="yellow", foreground="blue")
-        # self.trans.tag_config("start", background="black", foreground="green")
+        # init multiple language
+        # self.mul_check_val = tki.IntVar()
+        # self.mul_check = tki.Checkbutton(self.option_frame, text="Auto detect language", variable=self.mul_check_val, \
+        #                  onvalue=1, offvalue=0, height=5, \
+        #                  width=20)
+        # self.mul_check.grid(row=0, column=1)
+
+        # init combobox
+        self.lang_label = tki.Label(self.option_frame, text="Select language")
+        self.lang_label.grid(row=0, column=1)
+        self.list_of_items = [lang for lang, code in langDict.items()]
+
+        self.combobox_autocomplete = Combobox_Autocomplete(self.option_frame, self.list_of_items, highlightthickness=1)
+        self.combobox_autocomplete.grid(row=1, column=1, pady=(0,10))
+
+        # init off screen
+        self.off_img = ImageTk.PhotoImage(Image.open("off_stream.png").resize((400, 220)))
+
+        # init waiting screen
+        self.wait_img = ImageTk.PhotoImage(Image.open("wait_screen.jpg").resize((400, 220)))
+        self.panel = tki.Label(self.top_frame, image=self.wait_img)
+        self.panel.pack(side="left", expand=tki.YES, fill=tki.BOTH, padx=10, pady=10)
 
     def click_me(self):
         if self.record_btn['text'] == 'Stop':
+            global _FINISH
+            _FINISH = True
             self.record_btn.configure(text='Start')
-            self.audio_process.terminate()
+            self.stopEvent.set()
         else:
-            self.record_btn.configure(text='Stop')
-            self.audio_process = mp.Process(target=self.record_audio, args=())
-            self.audio_process.start()
-            self.trans.configure(state='normal')
-            self.trans.insert(tki.END, 'fasdf')
-            self.trans.configure(state='disabled')
+            if self.combobox_autocomplete.get_value():
+                self.record_btn.configure(text='Stop')
+                _new = threading.Thread(target=self.record_audio,args=())
+                _new.start()
+                self.thread = threading.Thread(target=self.videoLoop, args=())
+                self.thread.start()
+            else:
+                from tkinter import messagebox
+                messagebox.showinfo("Error", "Please choose a language.")
 
-    # config record audio
     def record_audio(self):
-        print(self.record_btn['text'])
-        # ts.main()
-        import test as t
-        rs = t.insert(self.trans)
-        self.trans.configure(state='normal')
-        self.trans.insert(tki.END, rs)
-        self.trans.configure(state='disabled')
-        self.root.update()
-        print(rs)
+        while not self.stopEvent.is_set():
+            thread1 = recordThread(self)
+            thread1.daemon = True
+            thread1.start()
+            time.sleep(1)
 
     def videoLoop(self):
         # DISCLAIMER:
@@ -112,17 +133,11 @@ class PhotoBoothApp:
                 image = Image.fromarray(image)
                 image = ImageTk.PhotoImage(image)
 
-                # if the panel is not None, we need to initialize it
-                if self.panel is None:
-                    self.panel = tki.Label(self.top_frame, image=image)
-                    self.panel.image = image
-                    self.panel.pack(side="left", padx=10, pady=10)
+                self.panel.configure(image=image)
+                self.panel.image = image
 
-                # otherwise, simply update the panel
-                else:
-                    self.panel.configure(image=image)
-                    self.panel.image = image
-
+            self.panel.configure(image=self.off_img)
+            self.panel.image = self.off_img
         except RuntimeError:
             print("[INFO] caught a RuntimeError")
 
