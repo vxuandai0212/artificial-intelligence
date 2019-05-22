@@ -1,6 +1,42 @@
-from speech_to_text.recognize import recognize_audio
+import io
+
+# def transcribe_file(file):
+#     speech_file = '/home/lam/Desktop/vini-intern/speech_recognition/' + file
+#     """Transcribe the given audio file."""
+#     from google.cloud import speech
+#     from google.cloud.speech import enums
+#     from google.cloud.speech import types
+#     client = speech.SpeechClient()
+#
+#     with io.open(speech_file, 'rb') as audio_file:
+#         content = audio_file.read()
+#
+#     audio = types.RecognitionAudio(content=content)
+#     config = types.RecognitionConfig(
+#         encoding=enums.RecognitionConfig.AudioEncoding.LINEAR16,
+#         language_code='vi-VN')
+#
+#     response = client.recognize(config, audio)
+#     _result = response.results[0].alternatives[0].transcript
+#     print(u'Transcript: {}'.format(_result))
+
+def transcribe_file(content):
+    from google.cloud import speech
+    from google.cloud.speech import enums
+    from google.cloud.speech import types
+    client = speech.SpeechClient()
+
+    audio = types.RecognitionAudio(content=content)
+    config = types.RecognitionConfig(
+        encoding=enums.RecognitionConfig.AudioEncoding.LINEAR16,
+        language_code='vi-VN')
+
+    response = client.recognize(config, audio)
+    _result = response.results[0].alternatives[0].transcript
+    print(u'Transcript: {}'.format(_result))
+    
 from emotion.predict import predict_emo
-from util import join_sen
+from util import mer_tran
 
 emo_table = [
     'female_angry',
@@ -37,40 +73,36 @@ app.config['CORS_HEADERS'] = 'Content-Type'
 @app.route("/predict", methods=["POST"])
 def analy():
     data = {"success": False}
-    def trans(voice, full_trans):
+    current_tran = {"text": "", "emo": ""}
+
+    def trans(voice):
         try:
-            data["trans"] = recognize_audio(voice)
+            current_tran["text"] = transcribe_file(voice)
         except:
-            data["trans"] = ''
-        if full_trans != '':
-            print('full_trans is available')
-            try:
-                data["full_trans"] = join_sen(full_trans, data["trans"])
-            except:
-                data["full_trans"] = full_trans + ' ' + data["trans"]
-                print("can not join sentence")
-        else:
-            print('full_trans is empty')
-            data["full_trans"] = data["trans"]
+            current_tran["text"] = ""
+        return
 
     def pre(filename):
         if os.path.isfile(filename):
             try:
                 predicted_emo = predict_emo(filename)
-                data["emotion_code"] = int(predicted_emo)
-                data["emotion"] = emo_table[predicted_emo]
+                # data["emotion_code"] = int(predicted_emo)
+                current_tran["emo"] = emo_table[predicted_emo]
             except:
                 print("no emotion detected")
+                current_tran["emo"] = "no"
 
     if flask.request.method == "POST":
         filename = flask.request.form["fname"]
         voice = flask.request.files['data']
-        full_trans = flask.request.form["full_trans"]
+        trans(voice)
+        full_trans = flask.request.form["trans"]
         voice.save(filename)
         if os.path.isfile(filename):
-            trans(filename, full_trans)
+
             pre(filename)
-            os.remove(filename)
+            # os.remove(filename)
+            data["trans"] = mer_tran(current_tran, full_trans)
         data["success"] = True
 
     res = jsonify(data)

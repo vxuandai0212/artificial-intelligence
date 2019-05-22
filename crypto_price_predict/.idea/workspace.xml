@@ -2,517 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a504bfc-eb85-480f-b045-b955b310984e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/vini-intern.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vini-intern.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/reddit_crawler/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/reddit_crawler/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/reddit_crawler/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/reddit_crawler/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/reddit_crawler/scrapy.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/reddit_crawler/stack/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/reddit_crawler/stack/items.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/reddit_crawler/stack/pipelines.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/reddit_crawler/stack/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/reddit_crawler/stack/spiders/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/reddit_crawler/stack/spiders/crawl_spider.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/reddit_crawler/stack/spiders/items.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/reddit_crawler/stack/spiders/stack_crawler.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/reddit_crawler/stack/spiders/stack_spider.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/twitter_crawler/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/twitter_crawler/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/twitter_crawler/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/twitter_crawler/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/twitter_crawler/config.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/twitter_crawler/exceptions.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/twitter_crawler/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/twitter_crawler/test_data/geo/US_BY_STATE_1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/twitter_crawler/test_data/geo/US_BY_STATE_2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/twitter_crawler/test_data/geo/US_BY_STATE_3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/twitter_crawler/test_data/geo/gz_2010_us_040_00_20m.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/twitter_crawler/test_data/geo/gz_2010_us_050_00_20m.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/twitter_crawler/test_data/geo/process_geojson.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/twitter_crawler/test_data/geo/us.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/twitter_crawler/test_data/geo/us_counties.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/twitter_crawler/test_data/ips.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/twitter_crawler/test_data/place_names.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/twitter_crawler/test_data/screen_names.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/twitter_crawler/test_data/search.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/twitter_crawler/test_data/tweet_ids.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/twitter_crawler/test_data/tweets_id_range.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/twitter_crawler/test_data/user_ids.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/twitter_crawler/test_data/user_screen_names.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/twitter_crawler/test_data/user_timelines.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/twitter_crawler/test_scripts/generate_search_json.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/twitter_crawler/test_scripts/search_configs/cancer_search.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/twitter_crawler/test_scripts/search_configs/hpv_search.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/twitter_crawler/test_scripts/search_configs/hpv_search_en_es_by_geocodes.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/twitter_crawler/test_scripts/search_configs/lynchsyndrome_search.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/twitter_crawler/test_scripts/search_terms_configs/cancer_search_terms_config.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/twitter_crawler/test_scripts/search_terms_configs/hpv_search_en_es_by_geocodes_search_terms_config.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/twitter_crawler/test_scripts/search_terms_configs/hpv_search_terms_config.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/twitter_crawler/test_scripts/search_terms_configs/lynchsyndrome_search_terms_config.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/twitter_crawler/twitter_crawler.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/twitter_crawler/twitter_streamer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/twitter_crawler/twitter_tracker.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/twitter_crawler/util.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/.idea/Sentiment-Analysis-in-Event-Driven-Stock-Price-Movement-Prediction-master.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/.vscode/settings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/archived/crawler_bloomberg.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/archived/crawler_stockPrices.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/archived/daily_reuters.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/archived/genFeatureMat_GloVe.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/archived/generate_features_Glove.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/archived/hf5.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/archived/log/conv_64_0.2_fc_64_0.2_32_0.2_thres_0.50_mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/archived/log/conv_64_0.2_fc_64_0.2_32_0.2_thres_0.50_short" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/archived/log/conv_64_0.2_fc_64_0.2_32_0.2_thres_0.55_mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/archived/log/conv_64_0.2_fc_64_0.2_32_0.2_thres_0.55_short" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/archived/log/conv_64_0.2_fc_64_0.2_32_0.2_thres_0.60_short" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/archived/log/conv_64_0.2_fc_64_0.2_32_0.2_thres_0.65_short" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/archived/model_keras_cnn_rnn.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/archived/output/new.128_100_3_0.5_64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/archived/output/new.64_100_2_0.5_32" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/archived/output/new.64_100_2_0.6_16" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/archived/output/new.64_100_2_0.6_32" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/archived/output/new.64_100_3_0.5_32" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/archived/output/output_keras_embedding_neuralNet" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/archived/output/result_glove_cnn_128filters_40dropout_1hiddenLayer64nodes_binaryClassification" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/archived/output/result_glove_cnn_128filters_50dropout_1hiddenLayer64nodes_binaryClassification" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/archived/past_reuters.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/archived/preprocessing.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/archived/preprocessing_v2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/archived/rnn.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/archived/tfidf_tsne.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/archived/utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/archived/w2v_word2idx.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/archived/word_embedding.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/crawler/.reuters.py.swp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/crawler/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/crawler/all_tickers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/crawler/daily_prices.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/crawler/daily_reuters.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/crawler/reuters.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/crawler/yahoo_finance.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/crawler/yqd.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/create_label.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/del_repeat.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/imgs/111.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/imgs/baidu.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/imgs/tar1.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/imgs/tar2.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/featureMatrix_test" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/featureMatrix_train" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/finished.reuters" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/models/model_10.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/models/model_100.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/models/model_15.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/models/model_20.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/models/model_25.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/models/model_30.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/models/model_35.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/models/model_40.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/models/model_45.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/models/model_5.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/models/model_50.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/models/model_55.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/models/model_60.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/models/model_65.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/models/model_70.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/models/model_75.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/models/model_80.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/models/model_85.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/models/model_90.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/models/model_95.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110706.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110707.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110708.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110711.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110712.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110713.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110714.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110715.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110718.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110719.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110720.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110721.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110722.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110725.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110726.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110727.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110728.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110729.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110801.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110802.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110803.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110804.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110805.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110808.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110809.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110810.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110811.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110812.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110815.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110816.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110817.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110818.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110819.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110822.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110823.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110824.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110825.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110826.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110829.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110830.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110831.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110901.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110902.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110905.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110906.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110907.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110908.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110909.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110912.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110913.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110914.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110915.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110916.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110919.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110920.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110921.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110922.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110923.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110926.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110927.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110928.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110929.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20110930.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111003.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111004.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111005.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111006.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111007.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111010.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111011.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111012.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111013.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111014.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111017.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111018.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111019.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111020.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111021.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111024.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111025.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111026.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111031.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111101.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111102.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111103.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111111.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111114.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111115.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111116.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111117.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111118.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111121.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111122.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111123.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111124.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111125.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111128.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111129.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111130.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111201.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111202.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111205.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111206.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111207.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111208.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111209.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111212.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111213.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111214.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111215.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111216.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111219.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111220.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111221.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111222.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111223.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111226.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111227.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111228.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111229.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2011/news_20111230.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2018/news_20180601.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2018/news_20180602.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2018/news_20180603.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2018/news_20180604.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2018/news_20180605.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2018/news_20180606.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2018/news_20180607.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2018/news_20180608.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2018/news_20180609.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2018/news_20180610.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2018/news_20180611.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2018/news_20180612.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2018/news_20180613.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2018/news_20180614.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2018/news_20180615.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2018/news_20180616.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2018/news_20180617.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2018/news_20180618.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2018/news_20180619.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2018/news_20180620.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2018/news_20180621.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2018/news_20180622.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2018/news_20180623.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2018/news_20180624.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2018/news_20180625.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2018/news_20180626.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2018/news_20180627.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2018/news_20180628.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/news/2018/news_20180629.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/prices/2018/price_20180531" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/prices/2018/price_20180601" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/prices/2018/price_20180602" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/prices/2018/price_20180603" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/prices/2018/price_20180604" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/prices/2018/price_20180605" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/prices/2018/price_20180606" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/prices/2018/price_20180607" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/prices/2018/price_20180608" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/prices/2018/price_20180609" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/prices/2018/price_20180610" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/prices/2018/price_20180611" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/prices/2018/price_20180612" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/prices/2018/price_20180613" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/prices/2018/price_20180614" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/prices/2018/price_20180615" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/prices/2018/price_20180616" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/prices/2018/price_20180617" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/prices/2018/price_20180619" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/prices/2018/price_20180620" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/prices/2018/price_20180621" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/prices/2018/price_20180622" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/prices/2018/price_20180623" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/prices/2018/price_20180624" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/prices/2018/price_20180625" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/prices/2018/price_20180626" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/prices/2018/price_20180627" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/prices/2018/price_20180628" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/prices/2018/price_20180629" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/sentences.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/stopWords" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/tickerList.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/word2idx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/word_freq_v4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/word_freq_v5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input/word_frequency_v3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/model.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/run_model.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/tokenize_news.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/util.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/.idea/twitter-sentiment-analysis-master.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/code/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/code/baseline.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/code/cnn-feats-svm.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/code/cnn.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/code/compare.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/code/decisiontree.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/code/extract-cnn-feats.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/code/logistic.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/code/lstm.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/code/majority-voting.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/code/maxent-nltk.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/code/naivebayes.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/code/neuralnet.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/code/preprocess.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/code/processed_train_data-unique.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/code/randomforest.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/code/stats.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/code/svm.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/code/utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/code/xgboost.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/dataset/negative-words.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/dataset/positive-words.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/css/bootstrap.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/css/font-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/css/linearicons.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/css/magnific-popup.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/css/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/css/main.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/css/nice-select.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/fonts/FontAwesome.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/fonts/Linearicons-Free.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/fonts/Linearicons-Free.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/fonts/Linearicons-Free.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/fonts/Linearicons-Free.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/fonts/Linearicons-Free.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/fonts/fontawesome-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/fonts/fontawesome-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/fonts/fontawesome-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/fonts/fontawesome-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/fonts/fontawesome-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/img/a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/img/a2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/img/about.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/img/b1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/img/b2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/img/b3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/img/banner.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/img/d.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/img/elements/disabled-check.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/img/elements/disabled-radio.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/img/elements/primary-check.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/img/elements/primary-radio.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/img/elements/success-check.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/img/elements/success-radio.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/img/f1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/img/f1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/img/f2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/img/f2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/img/f3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/img/f3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/img/f4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/img/f4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/img/f5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/img/f6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/img/f7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/img/f8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/img/g1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/img/g2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/img/g3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/img/g4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/img/g5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/img/g6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/img/g7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/img/g8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/img/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/img/play-btn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/img/story-bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/img/video-area-bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/img/w1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/js/bar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/js/jquery.ajaxchimp.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/js/jquery.magnific-popup.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/js/jquery.nice-select.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/js/vendor/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/js/vendor/jquery-2.2.4.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/_alert.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/_badge.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/_breadcrumb.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/_button-group.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/_buttons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/_card.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/_carousel.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/_close.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/_code.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/_custom-forms.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/_dropdown.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/_forms.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/_functions.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/_grid.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/_images.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/_input-group.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/_jumbotron.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/_list-group.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/_media.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/_mixins.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/_modal.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/_nav.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/_navbar.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/_pagination.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/_popover.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/_print.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/_progress.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/_reboot.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/_tables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/_tooltip.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/_transitions.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/_type.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/_utilities.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/mixins/_alert.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/mixins/_background-variant.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/mixins/_badge.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/mixins/_border-radius.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/mixins/_box-shadow.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/mixins/_breakpoints.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/mixins/_buttons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/mixins/_clearfix.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/mixins/_float.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/mixins/_forms.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/mixins/_gradients.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/mixins/_grid-framework.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/mixins/_grid.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/mixins/_hover.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/mixins/_image.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/mixins/_list-group.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/mixins/_lists.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/mixins/_nav-divider.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/mixins/_navbar-align.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/mixins/_pagination.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/mixins/_reset-text.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/mixins/_resize.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/mixins/_screen-reader.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/mixins/_size.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/mixins/_table-row.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/mixins/_text-emphasis.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/mixins/_text-hide.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/mixins/_text-truncate.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/mixins/_transition.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/mixins/_visibility.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/utilities/_align.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/utilities/_background.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/utilities/_borders.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/utilities/_clearfix.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/utilities/_display.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/utilities/_embed.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/utilities/_flex.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/utilities/_float.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/utilities/_position.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/utilities/_screenreaders.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/utilities/_sizing.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/utilities/_spacing.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/utilities/_text.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/bootstrap/utilities/_visibility.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/main.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/theme/_elements.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/theme/_flexbox.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/theme/_header.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/theme/_home.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/theme/_mixins.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/theme/_reset.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/public/scss/theme/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/client/views/index.pug" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/rest-api-server.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/simple-request.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/deploy/utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/docs/Plots.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter/twitter-sentiment-analysis-master/docs/report.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/twitter/twitter-sentiment-analysis-master/deploy/client/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/model/twitter/twitter-sentiment-analysis-master/deploy/client/app.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -528,12 +20,12 @@
     <session id="-963768010">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
-          <entry key="project.open.time.0" value="1" />
+          <entry key="project.closed" value="12" />
+          <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.3" value="4" />
-          <entry key="project.open.time.4" value="4" />
+          <entry key="project.open.time.4" value="5" />
           <entry key="project.open.time.5" value="3" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -580,8 +72,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/twitter/twitter-sentiment-analysis-master/code/cnn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1905">
-              <caret line="135" column="35" selection-start-line="135" selection-start-column="35" selection-end-line="135" selection-end-column="35" />
+            <state relative-caret-position="2025">
+              <caret line="143" column="35" selection-start-line="143" selection-start-column="9" selection-end-line="143" selection-end-column="35" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -592,7 +84,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crawler/twitter/twitter_crawler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
+            <state relative-caret-position="6060">
               <caret line="405" column="28" selection-start-line="405" selection-start-column="28" selection-end-line="405" selection-end-column="66" />
               <folding>
                 <element signature="e#25#39#0" expanded="true" />
@@ -606,12 +98,13 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/model/twitter/twitter-sentiment-analysis-master/deploy/rest-api-server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" selection-start-line="24" selection-end-line="28" selection-end-column="33" />
+            <state relative-caret-position="447">
+              <caret line="266" selection-start-line="265" selection-start-column="4" selection-end-line="266" />
               <folding>
+                <element signature="e#148#195#0" expanded="true" />
                 <marker date="1547624253839" expanded="true" signature="2315:3258" ph="..." />
                 <marker date="1547624253839" expanded="true" signature="4295:11606" ph="..." />
               </folding>
@@ -619,7 +112,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crawler/twitter/config.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
@@ -680,7 +173,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -698,30 +190,6 @@
               <item name="crypto_price_predict" type="462c0819:PsiDirectoryNode" />
               <item name="crawler" type="462c0819:PsiDirectoryNode" />
               <item name="twitter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crypto_price_predict" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crypto_price_predict" type="462c0819:PsiDirectoryNode" />
-              <item name="crawler" type="462c0819:PsiDirectoryNode" />
-              <item name="twitter" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crypto_price_predict" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crypto_price_predict" type="462c0819:PsiDirectoryNode" />
-              <item name="crawler" type="462c0819:PsiDirectoryNode" />
-              <item name="twitter" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="search_query" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crypto_price_predict" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crypto_price_predict" type="462c0819:PsiDirectoryNode" />
-              <item name="crawler" type="462c0819:PsiDirectoryNode" />
-              <item name="twitter" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="search_query" type="462c0819:PsiDirectoryNode" />
-              <item name="20190108" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="crypto_price_predict" type="b2602c69:ProjectViewProjectNode" />
@@ -749,32 +217,16 @@
               <item name="twitter-sentiment-analysis-master" type="462c0819:PsiDirectoryNode" />
               <item name="code" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="crypto_price_predict" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crypto_price_predict" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="twitter" type="462c0819:PsiDirectoryNode" />
-              <item name="twitter-sentiment-analysis-master" type="462c0819:PsiDirectoryNode" />
-              <item name="deploy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crypto_price_predict" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crypto_price_predict" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="twitter" type="462c0819:PsiDirectoryNode" />
-              <item name="twitter-sentiment-analysis-master" type="462c0819:PsiDirectoryNode" />
-              <item name="deploy" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../the-lazier-official" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Speech-Emotion-Analyzer" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -861,10 +313,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1215" height="1028" extended-state="6" />
-    <editor active="true" />
+    <frame x="64" y="-11" width="1217" height="1036" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30367836" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31479898" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -878,7 +329,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32777777" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32777777" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -915,31 +366,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/model/twitter/twitter-sentiment-analysis-master/code/cnn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1905">
-          <caret line="135" column="35" selection-start-line="135" selection-start-column="35" selection-end-line="135" selection-end-column="35" />
+        <state relative-caret-position="2025">
+          <caret line="143" column="35" selection-start-line="143" selection-start-column="9" selection-end-line="143" selection-end-column="35" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crawler/twitter/twitter_streamer.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/twitter/twitter-sentiment-analysis-master/deploy/rest-api-server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" selection-start-line="24" selection-end-line="28" selection-end-column="33" />
-          <folding>
-            <marker date="1547624253839" expanded="true" signature="2315:3258" ph="..." />
-            <marker date="1547624253839" expanded="true" signature="4295:11606" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/crawler/twitter/twitter_crawler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+        <state relative-caret-position="6060">
           <caret line="405" column="28" selection-start-line="405" selection-start-column="28" selection-end-line="405" selection-end-column="66" />
           <folding>
             <element signature="e#25#39#0" expanded="true" />
@@ -947,10 +384,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/crawler/twitter/twitter_streamer.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/crawler/twitter/config.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="92" selection-start-line="6" selection-start-column="92" selection-end-line="6" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/twitter/twitter-sentiment-analysis-master/deploy/rest-api-server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="266" selection-start-line="265" selection-start-column="4" selection-end-line="266" />
+          <folding>
+            <element signature="e#148#195#0" expanded="true" />
+            <marker date="1547624253839" expanded="true" signature="2315:3258" ph="..." />
+            <marker date="1547624253839" expanded="true" signature="4295:11606" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

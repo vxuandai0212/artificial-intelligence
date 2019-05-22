@@ -2,8 +2,8 @@
 from __future__ import print_function
 from PIL import Image
 from PIL import ImageTk
-import tkinter as tki
-from tkinter import scrolledtext
+import Tkinter as tki
+from Tkinter import *
 import threading
 import datetime
 import imutils
@@ -28,7 +28,8 @@ class PhotoBoothApp:
         self.vs = vs
         self.frame = None
         self.thread = None
-        self.stopEvent = None
+        self.stopEvent = Noney
+
 
         # initialize the root window and image panel
         self.root = tki.Tk()

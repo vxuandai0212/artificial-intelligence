@@ -38,3 +38,4 @@ def record_then_trans(lang, filename):
     # print("record time {}".format(finish_record-start_record))
     # print("trans time {}".format(finish_trans-finish_record))
 
+ 

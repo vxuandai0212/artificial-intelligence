@@ -5,8 +5,6 @@ var gumStream; 						//stream from getUserMedia()
 var rec;
 var rec1;
 var rec2;
-var rec3; 							//Recorder.js object
-var rec4;
 var input;						//MediaStreamAudioSourceNode we'll be recording
 var input1;
 var trans = ''

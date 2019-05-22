@@ -6,8 +6,6 @@ from google.cloud import speech
 from google.cloud.speech import enums
 from google.cloud.speech import types
 
-from language_code import langDict
-
 # Instantiates a client
 client = speech.SpeechClient()
 
@@ -19,7 +17,7 @@ def recognize_audio(filepath, lang):
     config = types.RecognitionConfig(
         encoding=enums.RecognitionConfig.AudioEncoding.LINEAR16,
         # sample_rate_hertz=16000,
-        language_code=langDict[lang]) # vi-VN, en-US, ja-JP
+        language_code='vi-VN') # vi-VN, en-US, ja-JP
 
     # Detects speech in the audio file
     try:
