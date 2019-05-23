@@ -1,1 +1,7 @@
-/crypto_price_predict/twitter/twitter-sentiment-analysis-master/deploy/client/node_modules
+crypto_price_predict/database
+crypto_price_predict/crawler/data
+crypto_price_predict/twitter-sentiment-analysis-master/dataset
+crypto_price_predict/twitter-sentiment-analysis-master/code/models
+crypto_price_predict/twitter-sentiment-analysis-master/deploy/client/node_modules
+
+product_recommend/database
