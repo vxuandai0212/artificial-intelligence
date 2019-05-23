@@ -1,10 +1,10 @@
-# some demo pictures
+# Some demo pictures
 <br />
 Chart compares bitcoin price with tweet sentiment
-![bitcoin chart](demo_image/bitcoin_chart.png)
+![bitcoin chart](https://github.com/vxuandai0212/artificial-intelligence/blob/master/demo_image/bitcoin_chart.png)
 <br />
 Product recommendation
-![product recommendation](demo_image/product_recommend.png)
+![product recommendation](https://github.com/vxuandai0212/artificial-intelligence/blob/master/demo_image/product_recommend.png)
 <br />
 Streaming app
-![streamer](demo_image/streamer.png)
+![streamer](https://github.com/vxuandai0212/artificial-intelligence/blob/master/demo_image/streamer.png)
